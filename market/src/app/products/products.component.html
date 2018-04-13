@@ -1,0 +1,14 @@
+<div class="col-12">
+	<div class="row">
+		<div class="col-6">
+			<ul class="row">
+				<li class="card col-12" *ngFor="let product of productsService.products">
+					<app-products-display [product]="product"></app-products-display>
+				</li>
+			</ul>
+		</div>
+		<div class="col-6">
+			<app-products-add (addedProduct)="addedProduct($event)"></app-products-add>
+		</div>
+	</div>
+</div>

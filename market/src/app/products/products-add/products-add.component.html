@@ -1,0 +1,5 @@
+<input type="text" name="name" [(ngModel)]="productName">
+<input type="text" name="name" [(ngModel)]="productDescription" [disabled]="descriptionDisabled">
+<br><br>
+<button class="btn btn-success" (click)="addProduct()">add</button>
+<button class="btn btn-success" (click)="toogleDescription()">toogle desc</button>
